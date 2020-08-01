@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta lang="es">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login con React y Firebase</title>
+        <link rel="shortcut icon" href="recursos/favicon.ico" type="image/x-icon" />
+        <!--<link rel="shortcut icon" href="recursos/favicon.ico" type="image/x-icon">-->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->	
+    </head>    
+
+        <body>
+            
+            <div id="root"></div>            
+            <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+            <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+            <script>
+                // Your web app's Firebase configuration
+                var firebaseConfig = {
+                    //agregar en gitignore config.js
+                    apiKey: "AIzaSyDxQlp_vSZZS_YHHu8tK6kaFDssmTFv_oU",
+                   // apiKey: window.apiKey,
+                    authDomain: "login-firebase-y-react.firebaseapp.com",
+                    databaseURL: "https://login-firebase-y-react.firebaseio.com",
+                    projectId: "login-firebase-y-react",
+                    storageBucket: "login-firebase-y-react.appspot.com",
+                    messagingSenderId: "909295904836",
+                    //messagingSenderId: window.messagingSenderId,
+                    appId: "1:909295904836:web:3df4fecb78a6584318b411",
+                    measurementId: "G-MB4FKK24L2"
+
+                };
+                //esto almacena nuestra config firebase en el 
+                //objeto window
+                window.firebase = firebase;
+                // Initialize Firebase
+                firebase.initializeApp(firebaseConfig);
+                //firebase.analytics();
+            </script>   
+         <!--<script src="config.js"></script>-->
+        </body>
+    
+</html>
