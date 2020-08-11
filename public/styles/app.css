@@ -1,0 +1,51 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#header {
+  text-align: center;
+}
+#header > img {
+  height: 150px;
+}
+
+body {
+  padding-left: 1em;
+}
+
+#loginContainer,
+#homeContainer {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+
+.message {
+  color: #61dbfb;
+  font-size: 1.2em;
+}
+.error {
+  color: red;
+  font-size: 1.2em;
+}
+
+button {
+  background-color: #ffcb2b;
+  border-style: solid;
+  font-size: 1em;
+  color: black;
+  margin-bottom: 1.2em;
+}
+#exitButton {
+  background-color: slategray;
+  border-style: solid;
+  font-size: 1em;
+  color: whitesmoke;
+  margin-top: 1em;
+}
+
+input {
+  padding: 0.5em;
+  font-size: 24px;
+}
